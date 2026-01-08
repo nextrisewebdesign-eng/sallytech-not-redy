@@ -39,10 +39,16 @@ const Products: React.FC = () => {
                   <HelpCircle size={12} /> How to fix this in Firebase:
                 </p>
                 <ol className="text-xs text-slate-400 space-y-2 list-decimal pl-4 font-medium">
-                  <li>Go to <strong>Firestore Database</strong> > <strong>Rules</strong> tab.</li>
-                  <li>Set <code>allow read: if true;</code> for the <code>laptops</code> collection.</li>
-                  <li>Click <strong>Publish</strong>.</li>
-                </ol>
+  <li>
+    Go to <strong>Firestore Database</strong> &gt; <strong>Rules</strong> tab.
+  </li>
+  <li>
+    Set <code>allow read: if true;</code> for the <code>laptops</code> collection.
+  </li>
+  <li>
+    Click <strong>Publish</strong>.
+  </li>
+</ol>
                 <a 
                   href="https://console.firebase.google.com/" 
                   target="_blank" 
