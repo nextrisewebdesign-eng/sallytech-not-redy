@@ -14,6 +14,7 @@ export interface Product {
   };
   description?: string;
   price: number;
+  offerPrice?: number;
   image: string;
   stock: number;
   condition: 'Refurbished' | 'Brand New';

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Clock, ShieldCheck } from 'lucide-react';
+import { MapPin, Phone, Clock, ShieldCheck, Lock } from 'lucide-react';
 import { SHOP_INFO } from '../constants';
 
 const Footer: React.FC = () => {
@@ -23,6 +23,7 @@ const Footer: React.FC = () => {
               <li><Link to="/products" className="hover:text-indigo-400 transition-colors">Inventory</Link></li>
               <li><Link to="/services" className="hover:text-indigo-400 transition-colors">Services</Link></li>
               <li><Link to="/contact" className="hover:text-indigo-400 transition-colors">Contact</Link></li>
+              <li><Link to="/admin" className="hover:text-indigo-400 transition-colors flex items-center gap-1.5"><Lock size={12}/> Admin Panel</Link></li>
             </ul>
           </div>
 

@@ -9,16 +9,18 @@ import {
   Cpu,
   MoreVertical
 } from 'lucide-react';
-import { PRODUCTS, TESTIMONIALS } from '../constants';
+import { useProducts } from '../context/ProductContext';
+import { TESTIMONIALS } from '../constants';
 import ProductCard from '../components/ProductCard';
 import ProductModal from '../components/ProductModal';
 import { Product } from '../types';
 
 const Home: React.FC = () => {
+  const { products } = useProducts();
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   // Show 8 products as requested, filtering for laptops if available
-  const featuredProducts = PRODUCTS.filter(p => p.category === 'laptop').slice(0, 8);
+  const featuredProducts = products.filter(p => p.category === 'laptop').slice(0, 8);
 
   const homeServices = [
     { 

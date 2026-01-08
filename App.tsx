@@ -8,6 +8,7 @@ import Products from './pages/Products';
 import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Admin from './pages/Admin';
 import MapSection from './components/MapSection';
 
 // Scroll to top on route change
@@ -32,6 +33,7 @@ const App: React.FC = () => {
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
         </main>
         {/* Map Section added globally at the bottom of the website */}
